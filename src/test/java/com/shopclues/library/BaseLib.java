@@ -28,13 +28,13 @@ public class BaseLib implements SauceOnDemandSessionIdProvider{
 	private SauceOnDemandAuthentication authentication = new SauceOnDemandAuthentication(USERNAME,ACCESS_KEY);
 	public String sessionId;
 	
-	@Parameters({"deviceName","version","data"})
+	//@Parameters({"deviceName","version","data"})
 	@BeforeTest()
-	public void setCapability(String deviceName, String version, String data) throws MalformedURLException
+	public void setCapability() throws MalformedURLException
 	{	
 		capabilities = new DesiredCapabilities();
-		capabilities.setCapability("deviceName", deviceName);
-		capabilities.setCapability("platformVersion",version );		
+		capabilities.setCapability("deviceName", "Android Emulator");
+		capabilities.setCapability("platformVersion","5.1" );		
 		capabilities.setCapability("deviceType","phone");
 		capabilities.setCapability("platformName", GenericLib.getCongigValue(sConfigFile, "PLATFORMNAME"));
 		capabilities.setCapability("app", GenericLib.getCongigValue(sConfigFile, "APP"));

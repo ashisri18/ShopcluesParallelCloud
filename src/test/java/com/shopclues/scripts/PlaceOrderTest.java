@@ -21,12 +21,12 @@ public class PlaceOrderTest extends BaseLib
 
 	/* @TestCaseID: PlaceOrder_03
 	 * @Description: Click a product from deal present on home page and add that product in cart.*/
-	@Parameters({"deviceName","version","data"})
+	//@Parameters({"deviceName","version","data"})
 	@Test(priority=1,enabled=false,description="Click a product from deal present on home page and add that product in cart.")
-	public void testAddProducttoCart(String deviceId, String version, String data) throws Exception
+	public void testAddProducttoCart() throws Exception
 	{	
-		sTestDataFile = sDirPath+"\\"+data;
-		System.out.println("2 execution"+data);
+		sTestDataFile = sDirPath+"\\TestData.xlsx";
+		System.out.println("2 execution"+"TestData.xlsx");
 		homePo= new HomePo(driver);
 		sTestCaseID="PlaceOrder_03";
 		sData=GenericLib.toReadExcelData(sTestCaseID,sTestDataFile);
@@ -50,12 +50,12 @@ public class PlaceOrderTest extends BaseLib
 	}
 	/* @TestCaseID: PlaceOrder_03
 	 * @Description:Search any product from home page and then verify search result shows the list of product.*/
-	@Parameters({"deviceName","version","data"})
+	//@Parameters({"deviceName","version","data"})
 	@Test(priority=2,enabled=false,description= "Search any product from home page and then verify search result shows the list of product.")
-	public void testSearchResult(String deviceId, String version, String data) throws Exception
+	public void testSearchResult() throws Exception
 	{
-		sTestDataFile = sDirPath+"\\"+data;
-		System.out.println("1 execution"+data);
+		sTestDataFile = sDirPath+"\\TestData.xlsx";
+		System.out.println("1 execution"+"TestData.xlsx");
 		homePo= new HomePo(driver);
 		sTestCaseID="PlaceOrder_03";
 		sData=GenericLib.toReadExcelData(sTestCaseID,sTestDataFile);
