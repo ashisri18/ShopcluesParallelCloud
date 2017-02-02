@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">PlaceOrderTest_1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">190.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">PlaceOrderTest_1 &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.shopclues.scripts.PlaceOrderTest</td><td><a href="#m1"><b>findMeAShoe</b>  ("Search any product from home page and then verify search result shows the list of product.")</a></td><td class="numi">1</td><td>1486031528056</td><td class="numi">90417</td></tr>
+</table>
+<h1>PlaceOrderTest_1</h1>
+<h2 id="m1">com.shopclues.scripts.PlaceOrderTest:findMeAShoe</h2>
+<div style="padding-left:3em">
+<h3>Test Messages</h3>
+Failed<br/>
+<h3>Failure</h3>
+<p>An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 61.27 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;CBT-084&apos;, ip: &apos;10.10.12.124&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_73&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.shopclues, noReset=true, webdriver.remote.quietExceptions=true, deviceName=emulator-5554, platform=LINUX, deviceUDID=emulator-5554, desired={app=/tmp/tmp1rg0GI/Shopclues.apk, proxy={proxyAutoconfigUrl=http://127.0.0.1:19876/pac.js, proxyType=PAC}, orientation=PORTRAIT, noReset=true, newCommandTimeout=75, platformVersion=5.1, webdriver.remote.quietExceptions=true, udid=emulator-5554, platformName=Android, deviceName=Android Emulator}, newCommandTimeout=75, platformVersion=5.1, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, udid=emulator-5554, app=/tmp/tmp1rg0GI/Shopclues.apk, orientation=PORTRAIT, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.shopclues, appWaitActivity=com.shopclues.SplashActivity, hasMetadata=true, databaseEnabled=false, appActivity=com.shopclues.SplashActivity, proxy={proxyAutoconfigUrl=http://127.0.0.1:19876/pac.js, proxyType=PAC}, webdriver.remote.sessionid=a238267b6ccc4264a405b723910c12e3, locationContextEnabled=false}]
+Session ID: a238267b6ccc4264a405b723910c12e3
+*** Element info: {Using=xpath, value=//android.widget.TextView[contains(@text,&apos;Shoe Care&apos;)]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:51)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:67)
+<br/>at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:145)
+<br/>at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:63)
+<br/>at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy8.click(Unknown Source)
+<br/>at com.shopclues.scripts.PlaceOrderTest.findMeAShoe(PlaceOrderTest.java:132)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

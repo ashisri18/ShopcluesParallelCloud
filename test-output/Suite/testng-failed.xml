@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Suite]">
+  <parameter name="data" value="TestData.xlsx"/>
+  <parameter name="deviceName" value="Android Emulator"/>
+  <parameter name="version" value="5.1"/>
+  <test name="PlaceOrderTest_1(failed)">
+    <parameter name="data" value="TestData.xlsx"/>
+    <parameter name="deviceName" value="Android Emulator"/>
+    <parameter name="version" value="5.1"/>
+    <classes>
+      <class name="com.shopclues.scripts.PlaceOrderTest">
+        <methods>
+          <include name="setCapability"/>
+          <include name="findMeAShoe"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.shopclues.scripts.PlaceOrderTest -->
+    </classes>
+  </test> <!-- PlaceOrderTest_1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

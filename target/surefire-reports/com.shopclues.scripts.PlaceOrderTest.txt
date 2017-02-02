@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.shopclues.scripts.PlaceOrderTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 362.267 sec <<< FAILURE! - in com.shopclues.scripts.PlaceOrderTest
+testAddProducttoCart(com.shopclues.scripts.PlaceOrderTest)  Time elapsed: 31.451 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.58 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'CBT-Project1', ip: '10.10.10.198', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.shopclues, noReset=true, webdriver.remote.quietExceptions=true, deviceName=emulator-5554, platform=LINUX, deviceUDID=emulator-5554, desired={app=/tmp/tmpl136xN/Shopclues.apk, proxy={proxyAutoconfigUrl=http://127.0.0.1:19876/pac.js, proxyType=PAC}, orientation=PORTRAIT, noReset=true, newCommandTimeout=75, platformVersion=5.0, webdriver.remote.quietExceptions=true, udid=emulator-5554, platformName=Android, deviceName=Android Emulator}, newCommandTimeout=75, platformVersion=5.0.2, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, udid=emulator-5554, app=/tmp/tmpl136xN/Shopclues.apk, orientation=PORTRAIT, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.shopclues, appWaitActivity=com.shopclues.SplashActivity, hasMetadata=true, databaseEnabled=false, appActivity=com.shopclues.SplashActivity, proxy={proxyAutoconfigUrl=http://127.0.0.1:19876/pac.js, proxyType=PAC}, webdriver.remote.sessionid=6bf32b67eba546cca770ffca474aa5bf, locationContextEnabled=false}]
+Session ID: 6bf32b67eba546cca770ffca474aa5bf
+	at com.shopclues.scripts.PlaceOrderTest.testAddProducttoCart(PlaceOrderTest.java:38)
+
+testFilteredProdectList(com.shopclues.scripts.PlaceOrderTest)  Time elapsed: 61.282 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 61.22 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'CBT-Project1', ip: '10.10.10.198', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_73'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.shopclues, noReset=true, webdriver.remote.quietExceptions=true, deviceName=emulator-5554, platform=LINUX, deviceUDID=emulator-5554, desired={app=/tmp/tmpl136xN/Shopclues.apk, proxy={proxyAutoconfigUrl=http://127.0.0.1:19876/pac.js, proxyType=PAC}, orientation=PORTRAIT, noReset=true, newCommandTimeout=75, platformVersion=5.0, webdriver.remote.quietExceptions=true, udid=emulator-5554, platformName=Android, deviceName=Android Emulator}, newCommandTimeout=75, platformVersion=5.0.2, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, udid=emulator-5554, app=/tmp/tmpl136xN/Shopclues.apk, orientation=PORTRAIT, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.shopclues, appWaitActivity=com.shopclues.SplashActivity, hasMetadata=true, databaseEnabled=false, appActivity=com.shopclues.SplashActivity, proxy={proxyAutoconfigUrl=http://127.0.0.1:19876/pac.js, proxyType=PAC}, webdriver.remote.sessionid=6bf32b67eba546cca770ffca474aa5bf, locationContextEnabled=false}]
+Session ID: 6bf32b67eba546cca770ffca474aa5bf
+*** Element info: {Using=id, value=com.shopclues:id/editText1}
+	at com.shopclues.scripts.PlaceOrderTest.testFilteredProdectList(PlaceOrderTest.java:90)
+

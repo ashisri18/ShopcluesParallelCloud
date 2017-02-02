@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel ="false" thread-count="2">
+  <test name="PlaceOrderTest_1" >
+   <parameter name="deviceName" value="Android Emulator"/>   
+   <parameter name="version" value="5.1"/>   
+     <parameter name="data" value="TestData.xlsx"/>   
+    <classes>
+          	<class name="com.shopclues.scripts.PlaceOrderTest"/>
+    </classes>
+     </test>
+    <!-- <test name="PlaceOrderTest_2" >
+    <parameter name="deviceName" value="Android GoogleAPI Emulator"/>
+    <parameter name="version" value="5.0"/>   
+    <parameter name="data" value="TestData2.xlsx"/>   
+   <classes>
+          	<class name="com.shopclues.scripts.PlaceOrderTest"/>
+    </classes>
+     </test> -->
+</suite> <!-- Suite -->

@@ -1,0 +1,1 @@
+Path = E:\CBT_Automation\Appium_Workspace\ShopcluesDemo//Capabilities.Properties
